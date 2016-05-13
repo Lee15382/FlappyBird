@@ -1,18 +1,19 @@
 /**
  * 
  */
-package com.example.view;
+package com.flappybird.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
+import android.os.Message;
 import android.view.SurfaceHolder;
 
-import com.example.config.Config;
-import com.example.config.Constants;
 import com.example.flappybird.R;
-import com.example.util.SoundPlayer;
+import com.flappybird.config.Config;
+import com.flappybird.config.Constants;
+import com.flappybird.util.SoundPlayer;
 
 /**
  * @author Lee *构建主界面
@@ -56,7 +57,6 @@ public class LoadingView extends BaseView {
 	public void surfaceCreated(SurfaceHolder arg0) {
 		super.surfaceCreated(arg0);
 		initBitmap();
-
 		// 检查绘画线程
 		if (this.thread.isAlive()) {
 			this.thread.start();
@@ -99,7 +99,8 @@ public class LoadingView extends BaseView {
 			}
 			this.threadFlag = false;
 		}
-//		mainActivity.getHandler().sendEmptyMessage(Config.TO_MAIN_VIEW);
+		mainActivity.getHandler().sendEmptyMessage(Config.TO_MAIN_VIEW);
+		System.out.println("yy");
 	}
 
 	// 绘图方法

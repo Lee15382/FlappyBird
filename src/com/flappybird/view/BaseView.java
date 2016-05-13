@@ -1,4 +1,4 @@
-package com.example.view;
+package com.flappybird.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -7,9 +7,9 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 
-import com.example.activitys.MainActivity;
-import com.example.config.Constants;
-import com.example.util.SoundPlayer;
+import com.flappybird.activitys.MainActivity;
+import com.flappybird.config.Constants;
+import com.flappybird.util.SoundPlayer;
 
 public class BaseView extends SurfaceView implements Callback, Runnable {
 

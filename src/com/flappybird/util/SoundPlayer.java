@@ -1,23 +1,23 @@
 /**
  * 
  */
-package com.example.util;
+package com.flappybird.util;
 
 import java.util.HashMap;
 
 import android.media.AudioManager;
 import android.media.SoundPool;
 
-import com.example.activitys.MainActivity;
 import com.example.flappybird.R;
+import com.flappybird.activitys.MainActivity;
 
 /**
  * @author Lee
- *播放器控制音频文件
+ *播放器控制音频文�?
  */
 public class SoundPlayer {
 	
-	private SoundPool soundPool; //使用SoundPool控制简短的音频文件
+	private SoundPool soundPool; //使用SoundPool控制�?短的音频文件
 	private MainActivity mainActivity;
 	private HashMap<Integer,Integer> map;
 	
@@ -25,9 +25,9 @@ public class SoundPlayer {
 		this.mainActivity = mainActivity;
 		map = new HashMap<Integer, Integer>();
 		/*
-		 * maxStream：8—— 同时播放的流的最大数量 
-		 *streamType：AudioManager.STREAM_MUSIC —— 流的类型，一般为STREAM_MUSIC(具体在AudioManager类中列出) 
-		 *srcQuality:0 —— 采样率转化质量，当前无效果，使用0作为默认值 
+		 * maxStream�?8—�?? 同时播放的流的最大数量�?
+		 *streamType：AudioManager.STREAM_MUSIC —�?? 流的类型，一般为STREAM_MUSIC(具体在AudioManager类中列出) 
+		 *srcQuality:0 —�?? 采样率转化质量，当前无效果，使用0作为默认值�?
 		 */
 		soundPool = new SoundPool(8,AudioManager.STREAM_MUSIC, 0);
 	}
@@ -45,7 +45,7 @@ public class SoundPlayer {
 		/*
 		 * int soundID, float leftVolume, float rightVolume, int priority, int loop, float rate
 		 * 	leftVolume和rightVolume表示左右音量
-		 * priority表示优先级,loop表示循环次数,rate表示速率速率最低0.5最高为2，1代表正常速度 
+		 * priority表示优先�?,loop表示循环次数,rate表示速率速率�?�?0.5�?高为2�?1代表正常速度 
 		 */
 		soundPool.play(sound,1, 1, 1, loop, 1.0f);
 	}

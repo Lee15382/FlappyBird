@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.config;
+package com.flappybird.config;
 
 
 
@@ -21,7 +21,7 @@ public class Config {
 	public final static float COLUMN_X_GAP = Constants.SCREEN_WIDTH / 2 + 50;//两个管子间的水平间距
 	
 	public final static double v0 = Constants.SCREEN_HEIGHT * 23 / 854;//小鸟上抛初速度
-	public final static double g = Constants.SCREEN_HEIGHT * 3 / 854;//重力加速度
+	public final static double g = Constants.SCREEN_HEIGHT * 3 / 854;//重力加速度 
 	public final static double t = 0.6;//时间间隔
 	
 }

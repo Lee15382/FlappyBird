@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.config;
+package com.flappybird.config;
 
 /**
  * @author Lee
